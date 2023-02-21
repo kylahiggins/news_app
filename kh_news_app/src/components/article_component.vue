@@ -3,14 +3,14 @@
     <div class="article_container">
 
         <div class="article_image_wrapper">
-            <img src="https://images.unsplash.com/photo-1474511320723-9a56873867b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YW5pbWFsfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="">
-        </div>
+            <img src="" alt="">
 
         <div class="article_text_wrapper">
-            <div class="author">author</div>
-            <div class="article_title">title</div>
-            <div class="time_date">date and time</div>
+            <div class="author"></div>
+            <div class="article_title"></div>
+            <div class="time_date"></div>
         </div>
+    </div>
     </div>
 
 </template>
@@ -24,6 +24,7 @@ export default {
 <style scoped>
 
 .article_container{
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -47,7 +48,21 @@ img{
 .article_text_wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.author{
+    font-size: 10px;
+}
+
+.article_title{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.time_date{
+    font-size: 10px;
+    font-weight: 100;
 }
 
 

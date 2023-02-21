@@ -28,7 +28,6 @@ import header_component from './components/header_component.vue'
 .article_display{
   margin: 10px;
   display: flex;
-  /* align-items: center; */
   flex-direction: column;
 }
 
