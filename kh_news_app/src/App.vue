@@ -1,5 +1,5 @@
 <script setup>
-// import article_component from './components/article_component.vue'
+import article_component from './components/article_component.vue'
 import header_component from './components/header_component.vue'
 </script>
 
@@ -10,8 +10,11 @@ import header_component from './components/header_component.vue'
   </header>
 
   <section class="article_display">
-    <h3>News Articles</h3>
+    <h3 class="heading">News Articles</h3>
+    <article_component/>
   </section>
+
+  
 
 
 </template>
@@ -20,13 +23,13 @@ import header_component from './components/header_component.vue'
 
 *{
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  margin: 5px;
 }
 
 .article_display{
-  margin-top: 20px;
-  text-align: center;
+  margin: 20px;
   display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 </style>
