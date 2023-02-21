@@ -1,23 +1,35 @@
 <script setup>
-// import article_component from './components/article_component.vue'
-import header from './components/header_component.vue'
+import article_component from './components/article_component.vue'
+import header_component from './components/header_component.vue'
 </script>
 
 <template>
   <header>
+  <header_component/>
 
   </header>
 
   <section class="article_display">
-    <h2>News Articles</h2>
+    <h3 class="heading">News Articles</h3>
+    <article_component/>
   </section>
 
-  <footer>
-   <h1>hello</h1>
-  </footer> 
+  
+
 
 </template>
 
 <style scoped>
+
+*{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.article_display{
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 
 </style>
