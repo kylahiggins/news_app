@@ -26,10 +26,13 @@ import header_component from './components/header_component.vue'
 }
 
 .article_display{
-  margin: 20px;
+  margin: 10px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+}
+
+.heading{
+  text-align: center;
 }
 
 </style>
