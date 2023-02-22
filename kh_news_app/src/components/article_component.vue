@@ -1,25 +1,32 @@
+<script setup>defineProps({ 
+    article_obj: { 
+      type: Object, 
+      required: true
+    }
+  }); 
+  </script>
+
 <template>
 
     <div class="article_container">
 
         <div class="article_image_wrapper">
-            <img src="" alt="">
+            <img src="" alt=""></div>
 
         <div class="article_text_wrapper">
-            <div class="author"></div>
-            <div class="article_title"></div>
-            <div class="time_date"></div>
+            <div class="author">
+                <p>{{ article_obj.author }}</p>
+            </div>
+            <div class="article_title">
+                <h3>{{ article_obj.title }}</h3>
+            </div>
+            <div class="time_date">
+                <p>{{ article_obj.publishedAt }}</p>
+            </div>
         </div>
-    </div>
     </div>
 
 </template>
-
-<script>
-export default {
-
-}
-</script>
 
 <style scoped>
 
