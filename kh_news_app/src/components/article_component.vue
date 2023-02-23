@@ -33,7 +33,6 @@ defineProps({
 .article_container {
   margin-top: 10px;
   display: flex;
-  flex-direction: row;
   gap: 20px;
   padding: 10px;
   box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 9%);
@@ -56,11 +55,12 @@ img {
 .article_text_wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  max-width: 160px;
 }
 
 .author {
   font-size: 12px;
+  max-width: 100px;
 }
 
 .article_title {

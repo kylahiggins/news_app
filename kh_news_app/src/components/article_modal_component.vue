@@ -8,28 +8,23 @@ defineProps({
 </script>
 
 <template>
-
   <div class="article_modal_container">
     <div class="article_image_wrapper">
       <img :src="modal_obj.urlToImage" alt="" />
     </div>
 
     <div class="article_title">
-        <p>{{ modal_obj.title }}</p>
-      </div>
-
+      <p>{{ modal_obj.title }}</p>
+    </div>
 
     <div class="row">
-
-        <div class="article_author">
+      <div class="article_author">
         <p>AUTHOR: {{ modal_obj.author }}</p>
       </div>
-
 
       <div class="time_date">
         <p>{{ modal_obj.publishedAt }}</p>
       </div>
-
     </div>
 
     <div class="content_container">
@@ -37,7 +32,6 @@ defineProps({
       <p>Go to Article: {{ modal_obj.url }}</p>
     </div>
   </div>
-  
 </template>
 
 <style scoped>
@@ -48,6 +42,7 @@ defineProps({
   position: absolute;
   flex-direction: column;
   padding: 10px;
+  
 }
 
 .article_image_wrapper {
@@ -70,14 +65,14 @@ img {
   font-weight: 100;
 }
 
-.content_container{
-    font-size: 12px;
+.content_container {
+  font-size: 12px;
 }
 
-.row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 </style>
